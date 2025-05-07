@@ -109,7 +109,7 @@ Everyone is welcome to contribute:
 
 > **GitHub:** [https://github.com/theparitoshkumar/SPACE_Web](#) *(SPACE WEB)*  
 > **Community:** Discord, Reddit, and Matrix coming soon  
-> **Website:** [theparitoshkumar.com/spaceweb](#) *(SPACE WEB)*
+> **Website:** [https://spaceweb.theparitoshkumar.com/](#) *(SPACE WEB)*
 
 ---
 
