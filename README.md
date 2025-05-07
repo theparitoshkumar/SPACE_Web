@@ -107,7 +107,7 @@ Everyone is welcome to contribute:
 - Improve performance, WASM runtime, or privacy tools
 - Design UI themes, mindfulness tools, and P2P plugins
 
-> **GitHub:** [github.com/SPACE_Web/](#) *(SPACE WEB)*  
+> **GitHub:** [https://github.com/theparitoshkumar/SPACE_Web](#) *(SPACE WEB)*  
 > **Community:** Discord, Reddit, and Matrix coming soon  
 > **Website:** [theparitoshkumar.com/spaceweb](#) *(SPACE WEB)*
 
