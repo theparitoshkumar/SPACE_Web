@@ -1,0 +1,10 @@
+Custom ports are handy for debugging. Python has a built-in web server you can use to serve files on your computer. For example, if you run
+
+python3 -m http.server 8000 -d /some/directory
+then going to http://localhost:8000/ should show you all the files in that directory. This is a good way to test your browser.
+
+
+eg,
+python -m http.server 8000
+
+
