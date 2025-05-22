@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Browser</title>
+</head>
+<body>
+    <canvas id="browserCanvas" width="800" height="600"></canvas>
+    <script>
+        const { ipcRenderer } = require('electron');
+        const canvas = document.getElementById('browserCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Receive display list and scroll position from main process
+        ipcRenderer.on('render', (event, { displayList, scroll }) => {
+            // Clear the canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            // Set font for text rendering
+            ctx.font = '16px Arial';
+            ctx.fillStyle = 'black';
+            // Draw each character at its position, adjusted for scroll
+            for (const [x, y, char] of displayList) {
+                if (y > scroll + 600) continue;
+                if (y + 18 < scroll) continue;
+                ctx.fillText(char, x, y - scroll);
+            }
+        });
+
+        // Handle keyboard events for scrolling
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowDown') {
+                ipcRenderer.send('scroll', 'down');
+            } else if (event.key === 'ArrowUp') {
+                ipcRenderer.send('scroll', 'up');
+            }
+        });
+    </script>
+</body>
+</html>
