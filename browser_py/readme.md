@@ -27,11 +27,13 @@ To launch the Python-based browser, open your terminal and navigate to the `Brow
 
 ```bash
 python browser.py https://www.example.org/path
+```
 
 ### Running a Localhost Server
 Want to test your browser with local files? You can spin up a simple localhost server using Python’s built-in HTTP server module. Navigate to the directory containing your files (e.g., directory/path/files) and run:
 
 ```bash
-python -m http.server
+python -m http.server dir/path/
+```
 
 This will start a server (default port: 8000). Open your browser and visit http://localhost:8000 to view your files.

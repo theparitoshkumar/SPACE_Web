@@ -59,6 +59,12 @@ http-server
 
 This starts a server (default port: 8080). Visit `http://localhost:8080` in your browser.
 
+GUI run 
+
+```bash 
+npx electron . https://browser.engineering/http.html
+```
+
 **Supported Platforms**:
 - **Windows**: Command Prompt, PowerShell, or WSL.
 - **macOS**: Terminal.
